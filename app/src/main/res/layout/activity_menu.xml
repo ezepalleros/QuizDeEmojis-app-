@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:id="@+id/wallpaper2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper2" />
+
+    <!-- Logo de juego -->
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="414dp"
+        android:layout_height="167dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <!-- Mensaje de bienvenida -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="500dp"
+        android:text="Bienvenido, "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo2"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <!-- Botón de sección "videojuegos" -->
+    <Button
+        android:id="@+id/buttonVideojuegos"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:text="🎮Videojuegos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- Botón de sección "películas" -->
+    <Button
+        android:id="@+id/buttonPeliculas"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:text="📽Películas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVideojuegos" />
+
+    <!-- Botón de sección "música" -->
+    <Button
+        android:id="@+id/buttonMusica"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:text="🎙Música"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPeliculas" />
+
+    <!-- Botón para volver a main -->
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMusica" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
